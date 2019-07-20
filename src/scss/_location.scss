@@ -1,0 +1,15 @@
+.location {
+   & .location__content {
+      margin-top: 4rem;
+      &--text p {
+         font-size: 2rem;
+         text-align: center;
+         margin-top: 7rem;
+         color: $red-color;
+      }
+      & .map {
+         height: 40rem;
+         width: auto;
+      }
+   }
+}

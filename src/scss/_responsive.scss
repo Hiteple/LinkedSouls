@@ -1,0 +1,485 @@
+// Desktop First
+
+// Large
+@media only screen and (max-width: 1300px) {
+   // Header
+   .header {
+      & .main-nav {
+         padding: 1rem 0;
+         & ul {
+            & .space {
+               margin: 0 3rem;
+            }
+            & li {
+               margin: 0 2rem;
+               font-size: .6rem;
+            }
+         }
+      }
+      & .hero {
+         background-position: center;
+         &__text {
+            h1 {
+               font-size: 4rem;
+            }
+            h2 {
+               font-size: 1rem;
+            }
+         }
+      }
+      & .arrow {
+         & span {
+            width: 1.2rem;
+            height: 1.2rem;
+            animation: arrowDown 4s infinite;
+         }
+      }
+   }
+   // Services
+   .services {
+      padding: 5rem 8rem;
+      & h2 {
+         font-size: 2rem;
+      }
+      & .services__content {
+         grid-template-columns: repeat(2, minmax(15rem, 1fr));
+         grid-gap: 2rem;
+         &--item {
+            & h3 {
+               font-size: 1.4rem;
+            }
+            & i {
+               font-size: 2rem;
+            }
+            & p {
+               font-size: 1rem;
+            }
+         }
+      }
+   }
+   // Gallery
+   .gallery {
+      padding: 7rem 4rem;
+      & .gallery__content {
+         grid-template-columns: repeat(auto-fit, minmax(20rem, 22rem));
+         grid-auto-rows: 1fr;
+      }
+   }
+   // Artists
+   .artists {
+      padding: 7rem 7rem;
+      &__content {
+         height: 50rem;
+         & .screen:hover {
+            flex-grow: 6;
+         }
+         & .screen {
+            & .text {
+               width: 15rem;
+               height: auto;
+               background-color: #fff;
+               padding: 2rem;
+               & h3 {
+                  font-size: 1rem;
+               }
+               & p {
+                  font-size: .8rem;
+               }
+            }
+         }
+      }
+   }
+   // Location
+   .location {
+      & .location__content {
+         &--text p {
+            font-size: 1.3rem;
+            margin-top: 2rem;
+         }
+      }
+   }
+   // Footer
+   .footer {
+      height: auto;
+      width: 100%;
+      background-color: $default-dark;
+      padding: 3rem 0;
+      &__container {
+         width: 100%;
+         & .footer__left {
+            margin: 0 1rem;
+            & p {
+               margin-top: .4rem;
+            }
+         }
+         & .footer__center {
+            margin: 0 1rem;
+            & p {
+               margin-top: 0;
+            }
+            &--sm {
+               margin-top: 1rem;
+               & i {
+                  font-size: 1.4rem;
+                  color: #fff;
+                  margin: 0 1rem;
+               }
+            }
+         }
+         & .footer__right {
+            margin: 0 1rem;
+            & p {
+               margin-top: .4rem;
+            }
+         }
+      }
+   }
+}
+
+
+// Medium
+@media only screen and (max-width: 950px) {
+   .header {
+      & .main-nav {
+         padding: 1rem 0;
+         & ul {
+            & .space {
+               display: none;
+            }
+            & li {
+               margin: 0 1rem;
+            }
+         }
+      }
+   }
+   // Services
+   .services {
+      padding: 4rem 5rem;
+      & h2 {
+         font-size: 1.5rem;
+      }
+      & .services__content {
+         grid-gap: 1.5rem;
+         &--item {
+            & h3 {
+               font-size: 1.2rem;
+            }
+            & i {
+               font-size: 1.5rem;
+            }
+            & p {
+               font-size: 1rem;
+            }
+         }
+      }
+   }
+   // Gallery
+   .gallery {
+      padding: 7rem 0;
+      & .gallery__content {
+         grid-template-columns: repeat(auto-fit, minmax(20rem, 22rem));
+         grid-auto-rows: 1fr;
+      }
+   }
+   // Artists
+   .artists {
+      padding: 7rem 4rem;
+      &__content {
+         height: 50rem;
+         & .screen:hover {
+            flex-grow: 6;
+         }
+         & .screen {
+            & .text {
+               width: 15rem;
+               height: auto;
+               background-color: #fff;
+               padding: 2rem;
+               text-align: center;
+               & h3 {
+                  font-size: 1rem;
+               }
+               & p {
+                  font-size: .8rem;
+               }
+            }
+         }
+      }
+   }
+   // Parallax
+   .parallax {
+      height: 20rem;
+      & h3 {
+         font-size: 1.5rem;
+         padding: 0 3rem;
+         & span {
+            color: $red-color;
+         }
+      }
+   }
+   // Location
+   .location {
+      padding: 3rem 4rem;
+      & .location__content {
+         &--text p {
+            font-size: 1.3rem;
+            margin: 2rem 0;
+         }
+      }
+   }
+}
+
+
+// Small
+@media only screen and (max-width: 768px) {
+   .header {
+      &__close {
+         background-color: #fff;
+         border-radius: 50%;
+         padding: 0 1rem;
+         display: block;
+         position: fixed;
+         right: 10%;
+         margin-top: 1rem;
+         font-size: 2.4rem;
+         color: $red-color;
+         cursor: pointer;
+         display: none;
+         z-index: 500;
+         transition: color .7s ease-out;
+      }
+      &__close:hover {
+         background-color: $red-color;
+         color: #fff;
+      }
+      &__open {
+         background-color: #fff;
+         border-radius: 50%;
+         padding: .2rem 1rem;
+         display: block;
+         position: fixed;
+         right: 10%;
+         margin-top: 1rem;
+         font-size: 2rem;
+         color: $red-color;
+         cursor: pointer;
+         z-index: 500;
+         transition: color .7s ease-out;
+      }
+      &__open:hover {
+         background-color: $red-color;
+         color: #fff;
+      }
+      & .main-nav {
+         position: fixed;
+         height: 100vh;
+         z-index: 300;
+         background-color: $default-dark;
+         opacity: .8;
+         display: none;
+         & ul {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            & li {
+               margin: 3rem 0;
+               font-size: .8rem;
+            }
+         }
+      }
+   }
+   // Services
+   .services {
+      padding: 4rem 3rem;
+      & h2 {
+         font-size: 1.5rem;
+      }
+      & .services__content {
+         grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+         grid-gap: 1.5rem;
+         &--item {
+            & h3 {
+               font-size: 1.2rem;
+            }
+            & i {
+               font-size: 1.5rem;
+            }
+            & p {
+               font-size: 1rem;
+            }
+         }
+      }
+   }
+   // Artists
+   .artists {
+      padding: 7rem 2rem;
+      &__content {
+         height: 30rem;
+         & .screen:hover {
+            flex-grow: 9;
+         }
+         & .screen {
+            & .text {
+               width: 10rem;
+               height: auto;
+               background-color: #fff;
+               padding: .5rem;
+               text-align: center;
+               & h3 {
+                  font-size: 1rem;
+               }
+               & p {
+                  font-size: .8rem;
+               }
+            }
+         }
+      }
+   }
+   // Location
+   .location {
+      padding: 3rem 2rem;
+      & .location__content {
+         & .map {
+            height: 20rem;
+            width: auto;
+         }
+      }
+   }
+   // Footer
+   .footer {
+      height: auto;
+      width: 100%;
+      background-color: $default-dark;
+      padding: 3rem 0;
+      &__container {
+         width: 100%;
+         flex-direction: column;
+         align-items: center;
+         & .footer__left {
+            padding: 2rem;
+            width: 100%;
+            & p {
+               margin-top: .4rem;
+            }
+         }
+         & .footer__center {
+            padding: 2rem;
+            width: 100%;
+            & p {
+               margin-top: 0;
+            }
+            &--sm {
+               margin-top: 1rem;
+               & i {
+                  font-size: 1.4rem;
+                  color: #fff;
+                  margin: 0 1rem;
+               }
+            }
+         }
+         & .footer__right {
+            width: 80%;
+            & p {
+               margin-top: .4rem;
+            }
+         }
+      }
+   }
+}
+
+// X-Small
+@media only screen and (max-width: 480px) {
+   .header {
+      & .main-nav {
+         z-index: 500 !important;
+      }
+      & .hero__text {
+         h1 {
+            font-size: 2.5rem;
+         }
+         h2 {
+            margin-top: .2rem;
+            font-size: .8rem;
+         }
+      }
+   }
+   // Services
+   .services {
+      padding: 4rem 2rem;
+      & h2 {
+         font-size: 1.4rem;
+      }
+      & .services__content {
+         grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+         grid-gap: 1.5rem;
+         &--item {
+            & h3 {
+               font-size: 1.2rem;
+            }
+            & i {
+               font-size: 1.5rem;
+            }
+            & p {
+               font-size: 1rem;
+            }
+         }
+      }
+   }
+   // Artists
+   .artists {
+      padding: 7rem 1rem;
+      height: auto;
+      &__content {
+         display: block;
+         height: auto;
+         &:hover .screen {
+            opacity: 1;
+         }
+         & .screen {
+            display: block;
+            width: 100%;
+            height: 100%;
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4),
+            &:nth-child(5) {
+               height: 40rem;
+               width: 100%;
+               background-position: top;
+               display: flex;
+               justify-content: center;
+               margin-top: 2rem;
+            }
+            & .text {
+               width: 100%;
+               height: auto;
+               background-color: #fff;
+               padding: 1rem;
+               text-align: center;
+               transform: translateX(0);
+               & h3 {
+                  font-size: 1.5rem;
+               }
+               & p {
+                  font-size: 1rem;
+               }
+            }
+         }
+      }
+   }
+   // Parallax
+   .parallax {
+      background-position: center;
+   }
+   // Location
+   .location {
+      padding: 3rem 1rem;
+      & .location__content {
+         &--text p {
+            font-size: 1rem;
+            margin: 1rem 0;
+         }
+      }
+   }
+}

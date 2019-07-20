@@ -1,0 +1,76 @@
+.artists {
+   background-color: rgb(31, 31, 31);
+   &__content {
+      display: flex;
+      justify-content: center;
+      margin-top: 5rem;
+      height: 55rem;
+      &:hover .screen {
+         opacity: .3;
+      }
+      & .screen:hover {
+         flex-grow: 6;
+         opacity: 1;
+      }
+      & .screen {
+         position: relative;
+         display: flex;
+         justify-content: flex-end;
+         align-items: flex-end;
+         flex-grow: 2;
+         overflow: hidden;
+         transition: 1s;
+         &:nth-child(1) {
+            background-image: url('../assets/optimized/artists/dmitriy-nushtaev-iMfu0nKMyeI-unsplash-min.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+         }
+         &:nth-child(2) {
+            background-image: url('../assets/optimized/artists/jake-davies-gEPjoFmAw4s-unsplash-min.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+         }
+         &:nth-child(3) {
+            background-image: url('../assets/optimized/artists/felipe-sagn-2xd0_6wEj6k-unsplash-min.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+         }
+         &:nth-child(4) {
+            background-image: url('../assets/optimized/artists/julian-florez-l5rmMuK8070-unsplash-min.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+         }
+         &:nth-child(5) {
+            background-image: url('../assets/optimized/artists/paola-aguilar-03vJWwzUE-4-unsplash-min.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+         }
+         & .text {
+            position: absolute;
+            width: 15rem;
+            height: auto;
+            background-color: #fff;
+            padding: 2.5rem;
+            transform: translateX(120%);
+            transition: .5s .4s;
+            text-align: justify;
+            & h3 {
+               font-size: 1.4rem;
+               color: $red-color;
+               font-family: 'Rock Salt', cursive;
+            }
+            & p {
+               font-size: 1rem;
+            }
+         }
+      }
+      & .screen:hover .text {
+         transform: translateX(0);
+      }
+   }
+}

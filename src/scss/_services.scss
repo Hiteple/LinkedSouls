@@ -1,0 +1,29 @@
+.services {
+   background-color: $default-dark;
+   & h2 {
+      color: #fff;
+   }
+   & .services__content {
+      display: grid;
+      margin: 0 auto;
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+      grid-gap: 1.5rem;
+      text-align: center;
+      margin-top: 6rem;
+      &--item {
+         & h3 {
+            font-size: 1.8rem;
+            color: $red-color;
+         }
+         & i {
+            font-size: 3rem;
+            margin: 1rem 0;
+            color: $red-color;
+         }
+         & p {
+            font-size: 1rem;
+            color: #fff;
+         }
+      }
+   }
+}

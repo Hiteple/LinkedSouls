@@ -1,0 +1,50 @@
+
+// Flat UI Palette v1
+$red-color: #c0392b;
+$red-color-light: #e74c3c;
+$default-dark: rgb(31, 31, 31);
+$dark-color: #2c3e50;
+$dark-color-light: #34495e;
+$light-color: #bdc3c7;
+$light-color-lighter: #ecf0f1;
+
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   box-sizing: border-box;
+}
+
+body {
+   box-sizing: inherit;
+   font-family: 'Taviraj', serif;
+   font-size: 62.5%;
+   scroll-behavior: smooth !important;
+   overflow-x: hidden;
+}
+
+// Helper classes
+
+.secondary-heading {
+   color: $red-color;
+   font-family: 'Rock Salt', cursive;
+   text-align: center;
+   font-size: 2.7rem;
+   letter-spacing: 3px;
+}
+
+.section-spacing {
+   padding: 7rem 10rem;
+}
+
+.visible {
+   display: block !important;
+}
+
+.hidden {
+   display: none !important;
+}

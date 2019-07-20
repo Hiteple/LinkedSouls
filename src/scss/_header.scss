@@ -1,0 +1,128 @@
+.header {
+   &__open {
+      display: none;
+   }
+   &__close {
+      display: none;
+   }
+   & .main-nav {
+      display: flex;
+      position: fixed;
+      width: 100%;
+      z-index: 9999;
+      justify-content: center;
+      padding: 1rem 0;
+      background-color: $default-dark;
+      & ul {
+         display: flex;
+         list-style: none;
+         & .space {
+            margin: 0 15rem;
+         }
+         & a:link,
+         & a:visited {
+            text-decoration: none;
+            color: #fff;
+            transition: color .2s ease;
+         }
+         & a:hover {
+            color: $red-color-light;
+         }
+         & li {
+            margin: 0 1rem;
+            font-size: .8rem;
+            letter-spacing: 3px;
+            font-weight: 700;
+            text-transform: uppercase;
+         }
+      }
+   }
+   & .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../assets/clem-onojeghuo-8soQzdz9XXA-unsplash-min.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      &__text {
+         display: flex;
+         flex-direction: column;
+         text-align: center;
+         color: #fff;
+         text-shadow: .2rem .4rem .2rem rgba(0, 0, 0, .5);
+         & span {
+            color: $red-color;
+         }
+         & h1 {
+            font-family: 'Rock Salt', cursive;
+            font-size: 7rem;
+            letter-spacing: 2px;
+            animation: enterLeft 2s ease;
+            & span {
+               color: $red-color;
+            }
+         }
+         & h2 {
+            margin-top: -2rem;
+            font-size: 1.5rem;
+            font-weight: 200;
+            font-style: italic;
+            animation: enterRight 2s ease;
+         }
+      }
+   }
+   & .arrow {
+      position: absolute;
+      left: 50%;
+      bottom: 10%;
+      & span {
+         display: block;
+         width: 2rem;
+         height: 2rem;
+         border-bottom: 2px solid $red-color;
+         border-right: 2px solid $red-color;
+         transform: rotate(45deg);
+         margin: -1rem;
+         animation: arrowDown 2s infinite;
+         &:nth-child(2) {
+            animation-delay: -0.2s;
+            transform: rotate(45deg) translate(-2rem, -2rem);
+         }
+         &:nth-child(3) {
+            animation-delay: -0.4s;
+         }
+      }
+   }
+}
+
+@keyframes enterRight {
+   0% {
+      transform: translateX(5rem);
+   }
+   100% {
+      transform: translateX(0);
+   }
+}
+@keyframes enterLeft {
+   0% {
+      transform: translateX(-5rem);
+   }
+   100% {
+      transform: translateX(0);
+   }
+}
+
+@keyframes arrowDown {
+   0% {
+      opacity: 0;
+      transform: rotate(45deg) translate(-2rem, -2rem);
+   }
+   50% {
+      opacity: 1;
+   }
+   100% {
+      opacity: 0;
+      transform: rotate(45deg) translate(2rem, 2rem);
+   }
+}

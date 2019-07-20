@@ -1,0 +1,28 @@
+.gallery {
+   background-color: rgb(224, 224, 224);
+   & .gallery__content {
+      margin-top: 4rem;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(20rem, 24rem));
+      grid-auto-rows: 1fr;
+      grid-gap: 3rem;
+      justify-content: center;
+      &-item {
+         justify-self: center;
+         align-self: center;
+         overflow: hidden;
+         transition: all .5s .2s ease;
+         & img {
+            width: 20rem;
+            height: 15rem;
+            transition: all 1s ease;
+         }
+      }
+      &-item:hover img {
+         transform: scale(1.4);
+      }
+      &-item:hover {
+         border: 2px solid $red-color;
+      }
+   }
+}

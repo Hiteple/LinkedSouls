@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <script src="https://kit.fontawesome.com/b614b88656.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Rock+Salt|Taviraj:200,400,700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""/>
+      <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+      integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+      crossorigin=""></script>
+      <link rel="stylesheet" href="./src/css/animate.min.css">
+      <link rel="stylesheet" href="./src/css/style.min.css">
+      <title>Linked Souls</title>
+   </head>
+   <body>
+      <header id="header" class="header">
+         <nav class="main-nav">
+            <ul>
+               <a href="#header"><li>Home</li></a>
+               <a href="#services"><li>Services</li></a>
+               <a href="#gallery"><li>Gallery</li></a>
+               <span class="space"></span>
+               <a href="#artists"><li>Our artists</li></a>
+               <a href="#location"><li>Location</li></a>
+               <a href="#footer"><li>Contact us</li></a>
+            </ul>
+         </nav>
+         
+         <!-- Open and close navigation -->
+         <div class="header__open">
+            <i class="fas fa-bars"></i>
+         </div>
+         <div class="header__close">
+            <i class="fas fa-times"></i>
+         </div>
+         <!-- End of Open and close navigation -->
+
+         <div class="hero">
+            <div class="hero__text">
+               <h1>L<span>inked</span>Souls</h1>
+               <h2>Tattoo <span>&</span> Piercings</h2>
+            </div>
+            <div class="arrow">
+               <span></span>
+               <span></span>
+               <span></span>
+            </div>
+         </div>
+      </header>
+
+      <main>
+         <!-- Services section -->
+         <section id="services" class="services section-spacing">
+            <h2 class="secondary-heading">What you'll find with us</h2>
+            <div class="services__content">
+               <div class="services__content--item wow slideInLeft" data-wow-duration="1.5s">
+                  <h3>Design</h3>
+                  <i class="fas fa-pencil-alt"></i>
+                  <p>At LinkedSouls we understand the importance and the meaning of a symbol, a pattern or even a simple drawing. Everyone deserves the right to share a special bond with their tattoo, and that is why you don't have to worry about anything. Just tell us what is in your interest in your first appointment. We'll handle the rest.</p>
+               </div>
+               <div class="services__content--item wow slideInLeft" data-wow-duration="1.5s">
+                  <h3>Tattoo</h3>
+                  <i class="fas fa-dragon"></i>
+                  <p>Right on the first appointment you'll get to know one of our designers and tattoo artists, and after introductions you'll get to know him or her a little bit to get confidence and break the ice. The quantity of sessions are dictated by the complexity of the tattoo itself, and this is something that will be talked about in the first place.</p>
+               </div>
+               <div class="services__content--item wow slideInRight" data-wow-duration="1.5s">
+                  <h3>Piercings</h3>
+                  <i class="fas fa-ring"></i>
+                  <p>If this is in your interest, we have an interesting variety of piercings and rings for every place in your skin. Even if we don't currently have the one you're seeking for, we can get it for you in 24 hours so you don't have to wait a lot. We know you're excited to get right on to it.</p>
+               </div>
+               <div class="services__content--item wow slideInRight" data-wow-duration="1.5s">
+                  <h3>Support</h3>
+                  <i class="far fa-question-circle"></i>
+                  <p>You'll recieve an "aftercare instructions" list on paper right on the second appointment in the case of tattoos (the same day you'll start), and in the case of a piercing it will be on the very first day. Also you'll get a number to get on touch with your very tattoo artist directly in the case you'll need assistance.</p>
+               </div>
+            </div>
+         </section>
+
+         <!-- Gallery -->
+         <section id="gallery" class="gallery section-spacing">
+            <h2 class="secondary-heading">Gallery</h2>
+            <div class="gallery__content">
+               <div class="gallery__content-item wow fadeInLeft" data-wow-duration="1.5s">
+                  <img src="./src/assets/optimized/grid/allef-vinicius-vKIc4k6dm10-unsplash-min.jpg" alt="Gallery photo">
+               </div>
+               <div class="gallery__content-item wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".4s">
+                  <img src="./src/assets/optimized/grid/angello-lopez-JVsGZWidnpw-unsplash-min.jpg" alt="Gallery photo">
+               </div>
+               <div class="gallery__content-item wow fadeInRight" data-wow-duration="1.5s">
+                  <img src="./src/assets/optimized/grid/anthony-tran-Ft-wi9aXPAw-unsplash-min.jpg" alt="Gallery photo">
+               </div>
+               <div class="gallery__content-item wow fadeInLeft" data-wow-duration="1.5s">
+                  <img src="./src/assets/optimized/grid/clem-onojeghuo-tHEXNI4L4S4-unsplash-min.jpg" alt="Gallery photo">
+               </div>
+               <div class="gallery__content-item wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".4s">
+                  <img src="./src/assets/optimized/grid/romina-farias-E9q-UPmClVI-unsplash-min.jpg" alt="Gallery photo">
+               </div>
+               <div class="gallery__content-item wow fadeInRight" data-wow-duration="1.5s">
+                  <img src="./src/assets/optimized/grid/genesis-castillo-7nmqnIevuG0-unsplash-min.jpg" alt="Gallery photo">
+               </div>
+               <div class="gallery__content-item wow fadeInLeft" data-wow-duration="1.5s">
+                  <img src="./src/assets/optimized/grid/jake-davies-0C3JoxAJW0I-unsplash-min.jpg" alt="Gallery photo">
+               </div>
+               <div class="gallery__content-item wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".4s">
+                  <img src="./src/assets/optimized/grid/jake-davies-2bFS1sED4o0-unsplash-min.jpg" alt="Gallery photo">
+               </div>
+               <div class="gallery__content-item wow fadeInRight" data-wow-duration="1.5s">
+                  <img src="./src/assets/optimized/grid/kristian-angelo-xyJZvUL4_TY-unsplash-min.jpg" alt="Gallery photo">
+               </div>
+               <div class="gallery__content-item wow fadeInLeft" data-wow-duration="1.5s">
+                  <img src="./src/assets/optimized/grid/lauren-mitchell-EX-R5--_ZuA-unsplash-min.jpg" alt="Gallery photo">
+               </div>
+               <div class="gallery__content-item wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".4s">
+                  <img src="./src/assets/optimized/grid/matheus-ferrero-RBsrv4yV5KY-unsplash-min.jpg" alt="Gallery photo">
+               </div>
+               <div class="gallery__content-item wow fadeInRight" data-wow-duration="1.5s">
+                  <img src="./src/assets/optimized/grid/chris-blonk-YjTrBqvT4b0-unsplash-min.jpg" alt="Gallery photo">
+               </div>
+               <div class="gallery__content-item wow fadeInLeft" data-wow-duration="1.5s">
+                  <img src="./src/assets/optimized/grid/kevin-grieve-55XYPUH29VM-unsplash-min.jpg" alt="Gallery photo">
+               </div>
+               <div class="gallery__content-item wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".4s">
+                  <img src="./src/assets/optimized/grid/subhkaran-singh-b03TME1aDrY-unsplash-min.jpg" alt="Gallery photo">
+               </div>
+               <div class="gallery__content-item wow fadeInRight" data-wow-duration="1.5s">
+                  <img src="./src/assets/optimized/grid/matheus-ferrero-7EM79VNJsx4-unsplash-min.jpg" alt="Gallery photo">
+               </div>
+            </div>
+         </section>
+
+         <!-- Our Artists -->
+         <section id="artists" class="artists section-spacing">
+            <h2 class="secondary-heading">Our artists</h2>
+            <div class="artists__content wow fadeIn" data-wow-duration="2s">
+               <div class="screen">
+                  <div class="text">
+                     <h3>Minerva Shelley</h3>
+                     <p>Writer. Total travel buff. Friendly pop culture scholar. Introvert. Thinker.</p>
+                  </div>
+               </div>
+               <div class="screen">
+                  <div class="text">
+                     <h3>Zakky O'Rilley</h3>
+                     <p>Social media specialist. Proud travelaholic. Coffee aficionado. General beer expert.</p>
+                  </div>
+               </div>
+               <div class="screen">
+                  <div class="text">
+                     <h3>Mary McKinley</h3>
+                     <p>Music expert. Devoted twitter junkie. Food geek. Web enthusiast. Proud writer.</p>
+                  </div>
+               </div>
+               <div class="screen">
+                  <div class="text">
+                     <h3>Olivia Brown</h3>
+                     <p>Lifelong gamer. Travel enthusiast. Pop culture geek. Certified alcohol evangelist.</p>
+                  </div>
+               </div>
+               <div class="screen">
+                  <div class="text">
+                     <h3>Sam White</h3>
+                     <p>Friend of animals everywhere. Tv nerd. Social media trailblazer.</p>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- Parallax section -->
+         <section id="parallax" class="parallax">
+            <h3>A tattoo is a <span>true</span> poetic creation. There's always more than meets the eye...</h3>
+         </section>
+
+         <!-- Location -->
+         <section id="location" class="location section-spacing">
+            <h2 class="secondary-heading">Our location</h2>
+            <div class="location__content">
+               <div id="location-map" class="map"></div>
+               <div class="location__content--text">
+                  <p>We're on 218 Centre St, New York, NY 10013, EE. UU.<br>Check our number or our email below if you're interested in making an appointment.</p>
+               </div>
+            </div>
+         </section>
+      </main>
+
+      <!-- Footer -->
+      <footer id="footer" class="footer">
+         <div class="footer__container">
+            <div class="footer__left">
+               <h3>L<span>inked</span>Souls</h3>
+               <p>Email: test@test.com</p>
+               <p>Tel: xxx-xxx-xxxx</p>
+               <p>Address: 218 Centre St, New York, NY 10013, EE. UU</p>
+            </div>
+            <div class="footer__center">
+               <h3>Social media</h3>
+               <p>Follow us on:</p>
+               <div class="footer__center--sm">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-dribbble"></i></a>
+               </div>
+            </div>
+            <div class="footer__right">
+               <h3>Copyright</h3>
+               <p>This website was made for the sole purpose of integrating it in a website portfolio, and so LinkedSouls is a fictional business. <br>It was designed and handcrafted by <a href="#">Alex Lerman</a>.<br>Check on me on <a href="https://github.com/Hiteple" target="_blank">Github</a> and <a href="https://www.linkedin.com/in/alex-abel-lerman-45462178/" target="_blank">Linkedin</a> :)</p>
+            </div>
+         </div>
+      </footer>
+
+      <script src="./src/js/wow.min.js"></script>
+      <script src="./src/js/index.js"></script>
+   </body>
+</html>
