@@ -9,7 +9,7 @@
   "author": "Alex Lerman",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.13.1"
   },
   "dependencies": {
     "animate.css": "^3.7.2"
